@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 3-b da Apostila Manzano">
+    <meta name="keywords" content="Javascript, Aula, Manzano">
+    <meta name="author" content="Alice">
+
+    <title>Reajuste salarial</title>
+
+</head>
+
+<body>
+
+    <script>
+        var salarioMensal = parseFloat(prompt("Digite o valor do salário mensal do funcionário em reais: "));
+        var reajuste = parseFloat(prompt("Digite o valor do reajuste em porcentagem: "));
+        
+        alert("Um salário de R$:" + salarioMensal.toFixed(2) + " que recebe um reajuste de " + reajuste + "% se tornará R$:" + (salarioMensal + (reajuste * salarioMensal / 100)).toFixed(2));
+    </script>
+
+    
+</body>
+
+</html>

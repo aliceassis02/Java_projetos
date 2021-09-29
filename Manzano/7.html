@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 4-e da Apostila Manzano">
+    <meta name="keywords" content="Javascript, Aula, Manzano">
+    <meta name="author" content="Alice">
+
+    <title>equação de segundo grau</title>
+
+</head>
+
+<body>
+
+    <script>
+        var a = parseFloat(prompt("Digite o valor de a: "));
+        var b = parseFloat(prompt("Digite o valor de b: "));
+        var c = parseFloat(prompt("Digite o valor de c: "));
+
+        if (a == 0 || Number.isNaN((-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)) == true) {
+        alert("a equação não possui raizes reais");
+        }
+        else {
+            alert(a + "x² + " + b + "x + " + c + " = 0 \n" +
+                "x  += " + ((-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)) + "\n" +
+                "x  -= " + ((-b - Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a))
+            );
+        }
+    </script>
+
+    <!-- Efetuar a leitura de três valores (variáveis A, B e C) e efetuar o cálculo da equação completa de
+segundo grau, apresentando as duas raízes, se para os valores informados for possível efetuar o
+referido cálculo. Lembre-se de que a variável A deve ser diferente de zero.   -->
+
+</body>
+
+</html>
